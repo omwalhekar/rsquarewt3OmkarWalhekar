@@ -20,7 +20,7 @@ function SelectionCard() {
         <div className="logo2">
           <Logo
             srcLarge={require("../img/icon22x.png")}
-            srcsmall={require("../img/icon22x.png")}
+            srcSmall={require("../img/icon2.png")}
           />
         </div>
         <img

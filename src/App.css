@@ -332,6 +332,20 @@ input[type="checkbox"]:checked + label:after {
     margin: -1%;
   }
 }
+@media (max-width: 340px) {
+  .project {
+    margin: -2%;
+  }
+  .box {
+    padding: 25px 15px !important;
+    width: 110%;
+  }
+  input[type="checkbox"] + label:after {
+    bottom: 5px;
+    right: 18px;
+    font-size: 10px;
+  }
+}
 ::-webkit-scrollbar {
   width: 2px;
   height: 5px;
