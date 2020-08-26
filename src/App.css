@@ -1,0 +1,340 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #eee;
+  font-family: Montserrat, sans-serif;
+}
+.project {
+  margin-left: 15%;
+}
+::selection {
+  background-color: #45ab93;
+  color: white;
+}
+
+/* container one 1 */
+.container1 {
+  width: 70%;
+  margin: 5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0.8rem 0.8rem 15px rgb(0, 0, 0, 0.15);
+}
+.card {
+  display: grid;
+  grid-template-columns: 0.35fr 0.65fr;
+  height: 300px;
+  position: relative;
+}
+.side1 {
+  background-image: url(./img/mobilecards2x.png),
+    linear-gradient(to right bottom, #45ab93, #45ab93);
+  background-blend-mode: soft-light;
+  background-size: cover;
+  border-radius: 10px 0px 0px 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+.logo1 {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 100%;
+  position: absolute;
+  left: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.side2 {
+  width: 100%;
+  position: relative;
+}
+.upload-box {
+  position: absolute;
+  width: 35rem;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  padding: 5rem 0 2rem 0;
+  border: dotted black 1px;
+  text-align: center;
+}
+.upload-logo {
+  margin-top: -30px;
+  width: 100px;
+}
+.upload-text {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.browse-link,
+.browse-link:link,
+.browse-link:visited {
+  text-decoration: none;
+  color: #45ab93;
+}
+h3 {
+  color: rgb(70, 70, 70);
+}
+.btns1 {
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* background-color: white; */
+}
+/* container 1 media queries */
+@media (max-width: 1000px) {
+  .logo1 {
+    left: 4%;
+  }
+  .upload-box {
+    width: 25rem;
+  }
+  .upload-logo {
+    margin-top: -30px;
+    width: 80px;
+  }
+}
+@media (max-width: 900px) {
+  .card {
+    height: 600px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .logo1 {
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+  }
+  .btns1 {
+    left: 50%;
+    bottom: 5%;
+    width: 100%;
+  }
+  .side1 {
+    border-radius: 10px 10px 0 0;
+  }
+  .lg {
+    display: none;
+  }
+  .sm {
+    display: block;
+  }
+}
+@media (min-width: 900px) {
+  .lg {
+    display: block;
+  }
+  .sm {
+    display: none;
+  }
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* container two 2 */
+
+.container2 {
+  width: 70%;
+  margin: 5rem;
+  box-shadow: 0.8rem 0.8rem 15px rgb(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.head {
+  height: 200px;
+  position: relative;
+  background-image: url(./img/EntireBackground2x.png),
+    linear-gradient(to right bottom, #45ab93, #45ab93);
+  background-blend-mode: soft-light;
+  background-size: 80%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+/* this is that white background behind the logo  */
+.logo2 {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo-img {
+  position: absolute;
+  left: 53%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 8rem;
+  height: 8rem;
+}
+.arrow {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 100%;
+  box-shadow: 5px 5px 15px rgba(49, 49, 49, 0.3);
+}
+.arrowback {
+  z-index: 100;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.arrowfront {
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.content {
+  height: 45rem;
+  background-color: white;
+  border-radius: 0px 0px 10px 10px;
+  position: relative;
+}
+.content-heading {
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(70, 70, 70);
+}
+.main-content {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  width: 70%;
+  height: 60%;
+  grid-template-columns: repeat(2, 0.7fr);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label:after {
+  position: absolute;
+  right: 20px;
+  content: "\2714";
+  font-size: 12px;
+  padding: 0.7px 3.2px;
+  border: 1px solid #45ab93;
+  border-radius: 50%;
+  background-color: white;
+  color: transparent;
+  /* margin-left: 13rem; */
+}
+input[type="checkbox"]:checked + label:after {
+  background-color: white;
+  color: #45ab93;
+}
+
+.box {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 40px;
+  background-color: #eaf6f4;
+  padding: 20px 25px;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #45ab93;
+}
+.btns2 {
+  position: absolute;
+  left: 50%;
+  bottom: 1%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+.btn {
+  margin-right: 5px;
+}
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  width: 120px;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+.btnpass {
+  padding: 0.6rem 0.6rem;
+  /* background-color: white; */
+  color: black;
+  border: 1.5px solid black;
+}
+.btnsubmit {
+  background-color: #45ab93;
+  color: white;
+
+  padding: 0.8rem 0.8rem;
+}
+
+/* container 2 media queries */
+@media (max-width: 1200px) {
+  .main-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 860px) {
+  .btn,
+  .btn:link,
+  .btn:visited {
+    width: 100px;
+    font-size: 15px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #45ab93;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #18856b;
+}
+
+/* variables */
+/* #45ab93 */
+
+/* checkbox color */
+/* #eaf6f4 */
