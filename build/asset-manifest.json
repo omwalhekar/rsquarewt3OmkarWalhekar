@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e2f6b373.chunk.css",
+    "main.js": "/static/js/main.29cb0f9b.chunk.js",
+    "main.js.map": "/static/js/main.29cb0f9b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ba1fa936.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ba1fa936.js.map",
+    "static/js/2.c4c3cb81.chunk.js": "/static/js/2.c4c3cb81.chunk.js",
+    "static/js/2.c4c3cb81.chunk.js.map": "/static/js/2.c4c3cb81.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a3ff8bf1b439f109b5b1d71adf35afe7.js": "/precache-manifest.a3ff8bf1b439f109b5b1d71adf35afe7.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.e2f6b373.chunk.css.map": "/static/css/main.e2f6b373.chunk.css.map",
+    "static/js/2.c4c3cb81.chunk.js.LICENSE.txt": "/static/js/2.c4c3cb81.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/mobilecards2x.dce680fc.png",
+    "static/media/icon22x.png": "/static/media/icon22x.f03d33cf.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ba1fa936.js",
+    "static/js/2.c4c3cb81.chunk.js",
+    "static/css/main.e2f6b373.chunk.css",
+    "static/js/main.29cb0f9b.chunk.js"
+  ]
+}

@@ -133,6 +133,12 @@ h3 {
     display: block;
   }
 }
+@media (max-width: 600px) {
+  .project {
+    margin-left: 6%;
+  }
+}
+
 @media (min-width: 900px) {
   .lg {
     display: block;
@@ -312,7 +318,20 @@ input[type="checkbox"]:checked + label:after {
     font-size: 15px;
   }
 }
-
+@media (max-width: 420px) {
+  .box {
+    width: 100%;
+  }
+  .container1 {
+    width: 80%;
+  }
+  .container2 {
+    width: 80%;
+  }
+  .project {
+    margin: -1%;
+  }
+}
 ::-webkit-scrollbar {
   width: 2px;
   height: 5px;
